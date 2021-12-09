@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #202124;
+}
+
+:root {
+    --while-color: #fff;
+    --text-color: #C0B6A0;
+    --text-opacity: #D5D2C9;
+    --border-color: #9A664C;
+    --gold-color: #C3924F;
+    --header-height: 80px;
+}
+
+.width-overlow {
+    overflow: hidden;
+}
+
+.row.no-wrap {
+    flex-wrap: nowrap;
+}
+
+.hidden {
+    opacity: 0 !important;
+}
+
+@keyframes lightBtn {
+    0% {
+        transform: scale(0) rotate(45deg);
+        opacity: 0;
+    }
+    80% {
+        transform: scale(0) rotate(45deg);
+        opacity: 0.5;
+    }
+    81% {
+        transform: scale(4) rotate(45deg);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(50) rotate(45deg);
+        opacity: 0;
+    }
+}
+
+@keyframes cardEffectChange {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.7) translate(50%, -20%);
+    }
+}
+
+@keyframes fadeCardMain {
+    0% {
+        transform: perspective(1100px) translateY(500px) translateX(-20px) translateZ(50px);
+        opacity: 0;
+    }
+    60% {
+        transform: perspective(1100px) translateY(-10px) translateX(-20px) translateZ(50px);
+        opacity: 1;
+    }
+    75% {
+        transform: perspective(1100px) translateY(-10px) translateX(-20px) translateZ(50px);
+        opacity: 1;
+    }
+    100% {
+        transform: perspective(1100px) translateY(0px) translateX(0) translateZ(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes openModalPlay {
+    from {
+        transform: translateY(100%);
+        opacity: 0.6;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes openModalMenu {
+    from {
+        transform: translateX(100%);
+        opacity: 0.6;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes linePlayModal {
+    from {
+        transform: scaleX(0.5);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes pointAnimateLeft {
+    from {
+        transform: translate(-35px, 30px);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+@keyframes pointAnimateRight {
+    from {
+        transform: translate(35px, 30px);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
